@@ -3,7 +3,7 @@
 using namespace std;
 using std::string;
 
-char pilihan; 			//variable pilihan
+int pilihan; 			//variable pilihan
 double saldo = 10000; 	//saldo awal
 double inputsaldo; 		//variable jumlah input saldo
 
@@ -66,16 +66,16 @@ int main(int argc, char** argv){
 		cout << "Pilihan : ";
 		cin >> pilihan; //inputan untuk pilihan
 		switch (pilihan){ //penyeleksian pilihan
-			case '1': //jika inputan '1' maka menuju function infoSaldo
+			case 1: //jika inputan '1' maka menuju function infoSaldo
 				infoSaldo(); //function infoSaldo
 				break; //untuk menghentikan penyeleksian
-			case '2': //jika inputan '2' maka menuju function tambahSaldo
+			case 2: //jika inputan '2' maka menuju function tambahSaldo
 				tambahSaldo(); //function tambahSaldo
 				break; //untuk menghentikan penyeleksian
-			case '3': //jika inputan '3' maka menuju function tarikSaldo
+			case 3: //jika inputan '3' maka menuju function tarikSaldo
 				tarikSaldo(); //function tarikSaldo
 				break; //untuk menghentikan penyeleksian
 		}
-	} while (pilihan != '0'); //akan mengulang sebelum user menginputkan '0'
+	} while (pilihan != 0); //akan mengulang sebelum user menginputkan '0'
 	return 0;
 }
