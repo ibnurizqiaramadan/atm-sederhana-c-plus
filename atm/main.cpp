@@ -9,10 +9,7 @@ double inputsaldo; 		//variable jumlah input saldo
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-string header(string menu = ""){
-	if (menu == ""){ //jika variable menu kosong maka diisi oleh "Utama"
-		menu = "Utama"; //mengisi variable menu 
-	}
+string header(string menu = "Utama"){
 	cout << "Selamat Datang dimenu " << menu << "\n\n"; //menampilkan "Selamat Datang dimenu <menu>)"
 	return menu;
 }
